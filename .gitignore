@@ -3,3 +3,4 @@ node_modules
 *.vsix
 site-packages
 task_files/go/
+docs/app_docs/promotion/paste_text_from_image_uses_tesseact.js
