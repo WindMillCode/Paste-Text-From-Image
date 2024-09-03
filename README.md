@@ -1,4 +1,4 @@
-<iframe src="https://github.com/sponsors/WindMillCode/card" title="Sponsor WindMillCode" height="225" width="600" style="border: 0;"></iframe>
+<iframe src="https://github.com/sponsors/WindMillCode/button" title="Sponsor WindMillCode" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe>
 
 # Windmillcode Paste Text From Image
 
