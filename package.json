@@ -12,10 +12,11 @@
     "vscode": "^1.79.0"
   },
 "categories": [
-  "Text",
+  "Formatters",
+  "Machine Learning",
   "Other",
-  "Formatting",
-  "Utilities"
+  "AI",
+  "Visualization"
 ],
 "keywords": [
   "OCR",
