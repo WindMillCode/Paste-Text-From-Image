@@ -6,26 +6,31 @@
   "publisher": "windmillcode-publisher-0",
   "icon": "images/logo.png",
   "repository": {
-    "url": "https://github.com/WindMillCode/vscode-extension-libraries"
+    "url": "https://github.com/WindMillCode/Paste-Text-From-Image"
   },
   "engines": {
     "vscode": "^1.79.0"
   },
-  "categories": [
-    "Visualization",
-    "Other"
-  ],
+"categories": [
+  "Text",
+  "Other",
+  "Formatting",
+  "Utilities"
+],
+"keywords": [
+  "OCR",
+  "Tesseract",
+  "Image",
+  "Clipboard",
+  "Text Extraction",
+  "Paste",
+  "VSCode Extension"
+],
+
   "activationEvents": [
     "onStartupFinished"
   ],
   "main": "./out/extension",
-  "keywords": [
-    "open",
-    "files",
-    "folder",
-    "related",
-    "browser"
-  ],
   "contributes": {
     "commands": [
       {
