@@ -1,0 +1,7 @@
+{
+	"typescript.tsc.autoDetect": "off",
+	"typescript.preferences.quoteStyle": "single",
+  "search.exclude": {
+    // "**/*.ps1": true
+  },
+}

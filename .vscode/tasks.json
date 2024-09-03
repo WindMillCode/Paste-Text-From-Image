@@ -1,0 +1,51 @@
+// See https://go.microsoft.com/fwlink/?LinkId=733558
+// for the documentation about the tasks.json format
+{
+  "version": "2.0.0",
+  "tasks": [
+
+
+    {
+      "type": "shell",
+      "label": "npm: watch",
+      "command": "npm run compile;npm run watch",
+      "problemMatcher": "$tsc-watch",
+      "isBackground": true,
+      "presentation": {
+        "reveal": "never",
+        "panel": "dedicated"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "type": "npm",
+      "script": "compile",
+      "problemMatcher": "$tsc",
+      "presentation": {
+        "reveal": "never",
+        "panel": "dedicated"
+      }
+    },
+
+    {
+      "label": "misc: rm all vsix",
+      "type": "shell",
+      "windows": {
+        "command": "rm **.vsix"
+      }
+    },
+
+
+  ],
+  "inputs": [
+
+    {
+      "id": "misc_make_new_command_0",
+      "description": "name of the command",
+      "type": "promptString"
+    }
+  ]
+}
