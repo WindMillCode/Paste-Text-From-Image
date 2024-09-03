@@ -2,13 +2,23 @@ import * as vscode from 'vscode';
 import * as Tesseract from 'tesseract.js';
 import { spawnSync } from 'child_process';
 import * as fs from 'fs';
+import { Jimp } from 'jimp';
 
-async function extractTextFromImage(imageBuffer: Buffer): Promise<string> {
-  const result = await Tesseract.recognize(imageBuffer, 'eng', {
-    logger: (m) => console.log(m), // optional: to monitor progress
+
+async function extractTextFromImage(imageBuffer) {
+  const worker = await Tesseract.createWorker('eng');
+  await worker.setParameters({
+    tessedit_pageseg_mode: Tesseract.PSM.AUTO_OSD,
   });
-  return result.data.text;
+
+
+  const { data: { text } } = await worker.recognize(imageBuffer);
+
+  await worker.terminate();
+
+  return text;
 }
+
 
 async function getImageBufferFromClipboard(): Promise<Buffer | null> {
   let imageBuffer: Buffer | null = null;
@@ -41,7 +51,19 @@ async function getImageBufferFromClipboard(): Promise<Buffer | null> {
     return null;
   }
 
-  return imageBuffer;
+  return imageBuffer
+
+  // TODO  make image highest quality for best results
+  // const base64Image = `data:image/png;base64,${imageBuffer.toString('base64')}`;
+  // let imageToOptimize = await Jimp.read(base64Image)
+  // imageToOptimize
+  // .resize({w:2000,h:2000})
+  //   // .quality(100)  // Ensure maximum quality
+  //   .greyscale();  // Convert the image to grayscale
+
+  // const optimizedBuffer = await imageToOptimize.getBuffer("image/png")
+
+  // return optimizedBuffer;
 }
 
 async function replaceImageWithText() {
@@ -53,8 +75,8 @@ async function replaceImageWithText() {
       return;
     }
 
-    const text = await extractTextFromImage(imageBuffer);
-
+    let text = await extractTextFromImage(imageBuffer)
+    text = text.replace(/’/g, "'").replace(/‘/g, "'");
     const editor = vscode.window.activeTextEditor;
     if (editor) {
       const position = editor.selection.active;
@@ -79,4 +101,4 @@ export function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(disposable);
 }
 
-export function deactivate() {}
+export function deactivate() { }

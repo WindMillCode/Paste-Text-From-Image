@@ -64,6 +64,7 @@
     "copy-paste": "^1.5.3",
     "fast-glob": "^3.3.2",
     "gitignore-parser": "^0.0.2",
+    "jimp": "^1.1.5",
     "semver": "^7.5.4",
     "tar": "^6.1.15",
     "tar.gz2": "^1.0.0",
