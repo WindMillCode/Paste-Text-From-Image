@@ -13,3 +13,4 @@ on every vscode update a new version will be release
 
 ## [1.92.2000] - 9-3-2024
 * Extension made available to the public ready for use
+* Also Version 1.0.0
