@@ -5,7 +5,7 @@
 Do you often find yourself needing to extract text from images, screenshots, or other visual content while working on your projects? The "Windmillcode Paste Text From Image" extension is designed to make this process seamless and efficient by allowing you to extract and paste text from images directly into your VSCode editor.
 
 
-<table>
+<table border="0">
   <tr>
     <td align="center">
       <a href="https://github.com/sponsors/WindMillCode?o=esc">
