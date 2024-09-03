@@ -1,0 +1,1 @@
+git@github.com:WindMillCode/paste_text_from_image_uses_tesseact.js.git
