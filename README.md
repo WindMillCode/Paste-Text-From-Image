@@ -1,3 +1,5 @@
+<iframe src="https://github.com/sponsors/WindMillCode/card" title="Sponsor WindMillCode" height="225" width="600" style="border: 0;"></iframe>
+
 # Windmillcode Paste Text From Image
 
 [Donate](https://www.gofundme.com/f/strengthen-our-business-to-take-on-bigger-initiati/widget/medium)
