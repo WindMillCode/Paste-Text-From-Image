@@ -2,7 +2,7 @@
   "name": "windmillcode-paste-text-from-image",
   "displayName": "Windmillcode: Paste Text From Image",
   "description": "",
-  "version": "1.0.0",
+  "version": "1.92.2010",
   "publisher": "windmillcode-publisher-0",
   "icon": "images/logo.png",
   "repository": {
@@ -11,23 +11,22 @@
   "engines": {
     "vscode": "^1.79.0"
   },
-"categories": [
-  "Formatters",
-  "Machine Learning",
-  "Other",
-  "AI",
-  "Visualization"
-],
-"keywords": [
-  "OCR",
-  "Tesseract",
-  "Image",
-  "Clipboard",
-  "Text Extraction",
-  "Paste",
-  "VSCode Extension"
-],
-
+  "categories": [
+    "Formatters",
+    "Machine Learning",
+    "Other",
+    "AI",
+    "Visualization"
+  ],
+  "keywords": [
+    "OCR",
+    "Tesseract",
+    "Image",
+    "Clipboard",
+    "Text Extraction",
+    "Paste",
+    "VSCode Extension"
+  ],
   "activationEvents": [
     "onStartupFinished"
   ],
