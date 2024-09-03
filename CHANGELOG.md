@@ -11,11 +11,11 @@ on every vscode update a new version will be release
 * you would have to check the CHANGELOG for any breaking, (major), minor or patched updates which will be denoted respectively
 
 
-## [1.92.2000] - 9-3-2024
+## v1.92.2000 - 9-3-2024
 * Extension made available to the public ready for use
 * Also Version 1.0.0
 
-## [1.92.2010]  [9/3/2024 3:45:12 PM EST]
+## v1.92.2010  [9/3/2024 3:45:12 PM EST]
 
 [UPDATE] Updated `extractTextFromImage` function in `src/extension.ts` to include progress reporting. Developers can now see the progress of text extraction as it happens.
 
