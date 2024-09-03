@@ -7,7 +7,11 @@ Do you often find yourself needing to extract text from images, screenshots, or 
 
 
 
+
+
 [![Sponsor](https://raw.githubusercontent.com/WindMillCode/global_media/main/github_sponsor_card.png)](https://github.com/sponsors/WindMillCode?o=esc)
+
+[![Donate](https://raw.githubusercontent.com/WindMillCode/global_media/main/gofund_me_support_our_work.png)](https://www.gofundme.com/f/strengthen-our-business-to-take-on-bigger-initiati/widget/medium?sharesheet=CAMPAIGN_PAGE&attribution_id=sl:620bea14-af8a-423b-ab6b-f9d82f490976)
 
 # Usage
 1. **Copy an image to your clipboard:**
