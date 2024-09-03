@@ -1,17 +1,19 @@
 # Windmillcode Paste Text From Image
 
-[Donate](https://www.gofundme.com/f/strengthen-our-business-to-take-on-bigger-initiati/widget/medium)
 
 # Overview
 Do you often find yourself needing to extract text from images, screenshots, or other visual content while working on your projects? The "Windmillcode Paste Text From Image" extension is designed to make this process seamless and efficient by allowing you to extract and paste text from images directly into your VSCode editor.
 
 
+<div style="display: flex;">
+  <a href="https://github.com/sponsors/WindMillCode?o=esc" style="flex: 0 0 50%;">
+    <img src="https://raw.githubusercontent.com/WindMillCode/global_media/main/github_sponsor_card.png" alt="Sponsor" style="width: 100%; height: auto;" />
+  </a>
+  <a href="https://www.gofundme.com/f/strengthen-our-business-to-take-on-bigger-initiati/widget/medium?sharesheet=CAMPAIGN_PAGE&attribution_id=sl:620bea14-af8a-423b-ab6b-f9d82f490976" style="flex: 0 0 50%;">
+    <img src="https://raw.githubusercontent.com/WindMillCode/global_media/main/gofund_me_support_our_work.png" alt="Donate" style="width: 100%; height: auto;" />
+  </a>
+</div>
 
-
-
-[![Sponsor](https://raw.githubusercontent.com/WindMillCode/global_media/main/github_sponsor_card.png)](https://github.com/sponsors/WindMillCode?o=esc)
-
-[![Donate](https://raw.githubusercontent.com/WindMillCode/global_media/main/gofund_me_support_our_work.png)](https://www.gofundme.com/f/strengthen-our-business-to-take-on-bigger-initiati/widget/medium?sharesheet=CAMPAIGN_PAGE&attribution_id=sl:620bea14-af8a-423b-ab6b-f9d82f490976)
 
 # Usage
 1. **Copy an image to your clipboard:**
