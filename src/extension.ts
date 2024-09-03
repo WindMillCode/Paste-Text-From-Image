@@ -5,10 +5,15 @@ import * as fs from 'fs';
 import { Jimp } from 'jimp';
 
 
-async function extractTextFromImage(imageBuffer) {
-  const worker = await Tesseract.createWorker('eng');
+async function extractTextFromImage(imageBuffer: Buffer, progress: vscode.Progress<{ message?: string; increment?: number }>) {
+  const worker = await Tesseract.createWorker('eng', Tesseract.OEM.DEFAULT, {
+    logger:m => {
+      progress.report({ message: m.status, increment: m.progress  });
+    }
+  });
   await worker.setParameters({
     tessedit_pageseg_mode: Tesseract.PSM.AUTO_OSD,
+
   });
 
 
@@ -75,17 +80,27 @@ async function replaceImageWithText() {
       return;
     }
 
-    let text = await extractTextFromImage(imageBuffer)
-    text = text.replace(/’/g, "'").replace(/‘/g, "'");
-    const editor = vscode.window.activeTextEditor;
-    if (editor) {
-      const position = editor.selection.active;
-      editor.edit((editBuilder) => {
-        editBuilder.insert(position, text);
-      });
-    } else {
-      vscode.window.showErrorMessage('There is no active editor.');
-    }
+    await vscode.window.withProgress({
+      location: vscode.ProgressLocation.Notification,
+      title: "Extracting text from image...",
+      cancellable: false,
+    }, async (progress) => {
+      let text = await extractTextFromImage(imageBuffer, progress);
+      text = text.replace(/’/g, "'").replace(/‘/g, "'");
+
+      const editor = vscode.window.activeTextEditor;
+      if (editor) {
+        const position = editor.selection.active;
+        editor.edit((editBuilder) => {
+          editBuilder.insert(position, text);
+        });
+      } else {
+        vscode.window.showErrorMessage('There is no active editor.');
+      }
+    });
+
+
+
   } catch (error) {
     console.error(error);
     vscode.window.showErrorMessage(`Error extracting text: ${error.message}`);

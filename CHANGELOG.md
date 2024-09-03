@@ -14,3 +14,9 @@ on every vscode update a new version will be release
 ## [1.92.2000] - 9-3-2024
 * Extension made available to the public ready for use
 * Also Version 1.0.0
+
+## [1.92.2010]  [9/3/2024 3:45:12 PM EST]
+
+[UPDATE] Updated `extractTextFromImage` function in `src/extension.ts` to include progress reporting. Developers can now see the progress of text extraction as it happens.
+
+[PATCH] Added `logger` to Tesseract worker to report progress while processing the image in `extractTextFromImage`. This will help developers understand the ongoing OCR operation.

@@ -22,10 +22,11 @@ Do you often find yourself needing to extract text from images, screenshots, or 
 | Windmillcode Paste Image as Text | `windmillcode-paste-text-from-image.pasteImageAsText` | Extracts text from the image in your clipboard and pastes it into the active editor. |
 
 # Contributing
-Contributions are welcome!
+Contributions are welcome! we need help on accurate results when greater than ~200 characters are in the image the results become very poor
 
 ## Caveat
 if the result is bad you must zoom into the image to get better results.
+For large texts breaker into smaller copies
 
 ## Roadmap
 - [ ] investigate image optimization solutions for better overall results
