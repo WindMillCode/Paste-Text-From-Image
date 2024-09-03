@@ -1,11 +1,10 @@
-<iframe src="https://github.com/sponsors/WindMillCode/button" title="Sponsor WindMillCode" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe>
-
 # Windmillcode Paste Text From Image
 
 [Donate](https://www.gofundme.com/f/strengthen-our-business-to-take-on-bigger-initiati/widget/medium)
 
 # Overview
 Do you often find yourself needing to extract text from images, screenshots, or other visual content while working on your projects? The "Windmillcode Paste Text From Image" extension is designed to make this process seamless and efficient by allowing you to extract and paste text from images directly into your VSCode editor.
+<iframe src="https://github.com/sponsors/WindMillCode/card" title="Sponsor WindMillCode" height="225" width="600" style="border: 0;"></iframe>
 
 # Usage
 1. **Copy an image to your clipboard:**
