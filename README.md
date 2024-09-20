@@ -39,7 +39,7 @@ Contributions are welcome! we need help on accurate results when greater than ~2
 
 ## Caveat
 if the result is bad you must zoom into the image to get better results.
-For large texts breaker into smaller copies
+For large texts break into smaller sections for better results
 
 ## Roadmap
 - [ ] investigate image optimization solutions for better overall results
